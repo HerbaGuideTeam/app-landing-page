@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerbaGuide</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/icon-logo.ico" type="image/x-icon">
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.jpeg" alt="HerbaGuide Logo">
+                <h3>HerbaGuide</h3>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <div class="text-content">
+                    <h1 id="hero-title">HerbaGuide</h1>
+                    <h2>Discover Nature's Secrets with <span class="highlight">HerbaGuide</span></h2>
+                    <p>Are you passionate about herbal plants? Do you want to harness their natural benefits and learn
+                        how to incorporate them into your daily life? Look no further than HerbaGuide, the ultimate app
+                        for herbal enthusiasts.</p>
+                    <button id="downloadButton">Download</button>
+                </div>
+                <aside class="image-content">
+                    <img src="assets/images/about/apk.png" alt="gambaran aplikasi" class="floating">
+                </aside>
+            </div>
+        </section>
+
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                document.getElementById('nav-ul').classList.toggle('open');
+            });
+        </script>
+
+        <!-- Feature Section -->
+        <section class="features" id="features">
+            <div class="features-content">
+                <h2>Features</h2>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <img src="assets/images/features/image-recognition.png" alt="">
+                        <h3>Identify Herbal Plants</h3>
+                        <p>Effortlessly identify herbal plants by simply taking or uploading a photo. Our app provides
+                            accurate names, detailed descriptions, and invaluable benefits of each plant.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/images/features/information.png" alt="">
+                        <h3>Benefits and Recipes</h3>
+                        <p>Unlock the full potential of herbal plants with our comprehensive descriptions, including an
+                            extensive list of uses and easy-to-follow recipes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/images/features/history.png" alt="">
+                        <h3>Saved History</h3>
+                        <p>Keep track of your discoveries with our convenient saved history feature, making it easy to
+                            revisit and utilize the herbal knowledge you've gained.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="team" id="team">
+            <div class="team-content">
+                <h2>Our Great Team</h2>
+                <div class="team-cards-container">
+                    <button class="arrow arrow-left" id="arrowLeft">&#10094;</button>
+                    <div class="team-cards" id="teamCards">
+                        <!-- Repeat this block for each team member -->
+                        <div class="team-card">
+                            <img src="assets/images/team/fredy-2.jpg" alt="Nama">
+                            <h3>Fredy</h3>
+                            <p>ML Engineer</p>
+                            <div class="social-links">
+                                <a href="https://instagram.com/xxdy.oh" target="_blank"><img src="assets/images/sosmed/instagram.png"
+                                        alt="Instagram" class="social-icon"></a>
+                                <a href="https://github.com/xxdyoh" target="_blank"><img src="assets/images/sosmed/github.png"
+                                        alt="GitHub" class="social-icon"></a>
+                                <a href="https://linkedin.com/in/fredysaputro" target="_blank"><img
+                                        src="assets/images/sosmed/linkedin.jpg" alt="LinkedIn" class="social-icon"></a>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/images/team/nana.jpeg" alt="Nama">
+                            <h3>Nana</h3>
+                            <p>ML Engineer</p>
+                            <div class="social-links">
+                                <a href="https://instagram.com/dhyannalisa" target="_blank"><img
+                                        src="assets/images/sosmed/instagram.png" alt="Instagram"
+                                        class="social-icon"></a>
+                                <a href="https://github.com/delisarp" target="_blank"><img src="assets/images/sosmed/github.png"
+                                        alt="GitHub" class="social-icon" target="_blank"></a>
+                                <a href="https://linkedin.com/in/dhyannalisa"><img
+                                        src="assets/images/sosmed/linkedin.jpg" alt="LinkedIn" class="social-icon"></a>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/images/team/cindy.jpeg" alt="Nama">
+                            <h3>Cindy</h3>
+                            <p>ML Engineer</p>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/cndy.e_" target="_blank"><img
+                                        src="assets/images/sosmed/instagram.png" alt="Instagram"
+                                        class="social-icon"></a>
+                                <a href="https://github.com/cndye" target="_blank"><img src="assets/images/sosmed/github.png"
+                                        alt="GitHub" class="social-icon"></a>
+                                <a href="https://www.linkedin.com/in/cindy-fadillah-18b936300/" target="_blank"><img
+                                        src="assets/images/sosmed/linkedin.jpg" alt="LinkedIn" class="social-icon"></a>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/images/team/nael-4-doc.jpeg" alt="Nama">
+                            <h3>Natanael</h3>
+                            <p>Cloud Engineer</p>
+                            <div class="social-links">
+                                <a href="https://instagram.com/nael_edwrd" target="_blank"><img src="assets/images/sosmed/instagram.png"
+                                        alt="Instagram" class="social-icon"></a>
+                                <a href="https://github.com/NatanaelEdward" target="_blank"><img src="assets/images/sosmed/github.png"
+                                        alt="GitHub" class="social-icon"></a>
+                                <a href="https://linkedin.com/in/natanaeledward" target="_blank"><img
+                                        src="assets/images/sosmed/linkedin.jpg" alt="LinkedIn" class="social-icon"></a>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/images/team/nuriya.jpeg" alt="Nama">
+                            <h3>Nuriya</h3>
+                            <p>Cloud Engineer</p>
+                            <div class="social-links">
+                                <a href="https://instagram.com/nry.a18" target="_blank"><img src="assets/images/sosmed/instagram.png"
+                                        alt="Instagram" class="social-icon"></a>
+                                <a href="https://github.com/nuriyatussholihah" target="_blank"><img
+                                        src="assets/images/sosmed/github.png" alt="GitHub" class="social-icon"></a>
+                                <a href="https://linkedin.com/in/nuriyatussholihah" target="_blank"><img src="assets/images/sosmed/linkedin.jpg"
+                                        alt="LinkedIn" class="social-icon"></a>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/images/team/tio.jpg" alt="Nama">
+                            <h3>Tio</h3>
+                            <p>Mobile Developer</p>
+                            <div class="social-links">
+                                <a href="https://instagram.com/tiochoirul" target="_blank"><img src="assets/images/sosmed/instagram.png"
+                                        alt="Instagram" class="social-icon"></a>
+                                <a href="https://github.com/tiochoirul" target="_blank"><img src="assets/images/sosmed/github.png"
+                                        alt="GitHub" class="social-icon"></a>
+                                <a href="https://linkedin.com/in/tiochoirul" target="_blank"><img
+                                        src="assets/images/sosmed/linkedin.jpg" alt="LinkedIn" class="social-icon"></a>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <img src="assets/images/team/ari.jpeg" alt="Nama">
+                            <h3>Ari</h3>
+                            <p>Mobile Developer</p>
+                            <div class="social-links">
+                                <a href="#"><img src="assets/images/sosmed/instagram.png"alt="Instagram"
+                                        class="social-icon"></a>
+                                <a href="https://github.com/arisetiawan0" target="_blank"><img src="assets/images/sosmed/github.png"
+                                        alt="GitHub" class="social-icon"></a>
+                                <a href="https://linkedin.com/in/ari-setiawan-5b39b7254" target="_blank"><img
+                                        src="assets/images/sosmed/linkedin.jpg" alt="LinkedIn" class="social-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow arrow-right" id="arrowRight">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us:</h3>
+                <p><a href="https://github.com/HerbaGuideTeam"><img src="assets/images/sosmed/github.png" alt="GitHub" class="github-logo">GitHub</a>
+                </p>
+                <p><a href="#"><img src="assets/images/sosmed/gmail.jpg" alt="Email" class="gmail-logo">Email</a></p>
+            </div>
+            <div class="supported-by">
+                <h3>Supported by:</h3>
+                <div class="logos">
+                    <img src="assets/images/footer/bangkit.png" alt="Bangkit">
+                    <img src="assets/images/footer/km.png" alt="Kemendikbud">
+                    <img src="assets/images/footer/merdeka.png" alt="Kampus Merdeka">
+                </div>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img src="assets/images/logo.jpeg" alt="HerbaGuide Logo">
+            <h3>HerbaGuide</h3>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
